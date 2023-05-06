@@ -14,6 +14,7 @@
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
         </div>
         <button @onclick='() => Navigation.NavigateToLogin("authentication/login")'>Login</button>
+        <button @onclick='() => Navigation.NavigateToLogout("authentication/logout")'>Logout</button>
         <div>Roles: @Roles</div>
 
         <article class="content px-4">

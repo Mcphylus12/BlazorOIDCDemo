@@ -24,6 +24,7 @@ builder.Services.AddOidcAuthentication(options =>
 {
     options.ProviderOptions.Authority = "https://login.microsoftonline.com/3e3c0505-f852-4e82-a27f-e43f4e47b93d/v2.0";
     options.ProviderOptions.RedirectUri = "https://localhost:7128/authentication/login-callback";
+    options.ProviderOptions.PostLogoutRedirectUri = "https://localhost:7128/authentication/logout-callback";
     options.ProviderOptions.ClientId = "6793ce1b-6661-45dc-a324-996dea8aea41";
     options.ProviderOptions.ResponseType = "code";
 });
